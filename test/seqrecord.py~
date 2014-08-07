@@ -1,0 +1,10 @@
+#!/opt/local/bin/python
+#Filename: seqrecord.py
+from Bio.seq import Seq 
+from Bio.seqRecord import SeqRecord
+from Bio.Alphabet import IUPAC
+record = SeqRecord(Seq("MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF",
+                       IUPAC.protein),
+                   id="YP_025292.1",name="HokC",
+                   description="toxic membrane protein, small")
+print record
